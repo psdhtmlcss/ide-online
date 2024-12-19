@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDE</title>
+    <script type="module" crossorigin src="/assets/index-DSoj4sJp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BOMFP1xl.css">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Тестовое задание на позицию Junior Frontend Developer</h1>
+        <p>Вы должны реализовать упрощённый интерфейс редактора кода (аналог leetcode.com), где пользователь может писать код на одном из двух заданных языков (например, Go и Python), отправлять его «на сервер» (имитация сервера) для выполнения и получать результаты.</p>
+        <div class="row row-top">
+          <div class="col">
+            <label for="selectMode">Выберите язык:</label>
+            <select name="" id="selectMode" class="form-control js-select-mode">
+              <option value="html">HTML</option>
+              <option value="css">CSS</option>
+            </select>
+          </div>
+          <div class="col">
+            <button type="buton" class="btn js-run">Run</button>
+          </div>
+        </div>
+        <div class="row">
+          <div id="editor" class="editor"></div>
+          <div class="result js-result"><pre></pre></div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.36.5/ace.js" integrity="sha512-P4Yyv1mPQ0p5qLeBwhXMt4H9xfTnIdV1E/TdNyIS3omReUnnIVePciH+456UvnW6fB2jph8MAw7ThFOT1aBahQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
