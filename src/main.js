@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/modes/';
+const URL = 'https://my-json-server.typicode.com/psdhtmlcss/db/modes/';
 const Modes = {
   HTML: 1,
   CSS: 2
