@@ -10,14 +10,19 @@ const runButton = document.querySelector('.js-run');
 
 editor.session.setMode('ace/mode/html');
 
-function renderResult(data) {
+function clearResult() {
   result.innerHTML = '';
+}
+
+function renderResult(data) {
+  clearResult()
   result.insertAdjacentText('afterbegin', data);
 }
 
 function onSelectChange(evt)  {
   editor.session.setMode(`ace/mode/${evt.target.value}`);
   editor.setValue('');
+  clearResult();
 }
 
 function onRunButtonClick(evt) {

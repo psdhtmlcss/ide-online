@@ -23,6 +23,7 @@ body {
 
 pre {
   padding: var(--padding);
+  margin: 0;
 }
 
 .btn {
@@ -66,13 +67,15 @@ pre {
 
 .editor,
 .result {
-  width: 100%;
+  width: 50%;
   height: 500px;
-  background-color: white;
+  flex-shrink: 0;
 }
 
 .result {
   border: 0;
+  background-color: rgba(0, 0, 0, .05);
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -82,6 +85,11 @@ pre {
 
   .row:not(.row-top) {
     flex-direction: column;
+  }
+
+  .editor,
+  .result {
+    width: 100%;
   }
 
   .editor {
